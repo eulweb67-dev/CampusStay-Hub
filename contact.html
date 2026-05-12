@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — CampusStay Hub</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">
+    <div class="logo-icon">🏨</div>
+    <span>Campus<em>Stay</em> Hub</span>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="listings.html">Listings</a></li>
+    <li><a href="post.html">Post Listing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-auth">
+    <button class="login" onclick="location.href='login.html'">Login</button>
+    <button class="signup" onclick="location.href='signup.html'">Sign Up</button>
+  </div>
+</nav>
+
+<!-- ===== PAGE HEADER ===== -->
+<div class="page-header">
+  <h1>Contact Us</h1>
+  <p>Have a question or want to get a listing added? Reach out to the CampusStay Hub team</p>
+</div>
+
+<!-- ===== CONTACT CONTENT ===== -->
+<div class="contact-page">
+  <div class="contact-grid">
+
+    <!-- Left: Info -->
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <p>We'd love to hear from you — whether you're a student looking for help, an accommodation provider wanting to be listed, or anyone with feedback about the platform.</p>
+
+      <div class="info-item">
+        <div class="info-icon">🏫</div>
+        <div>
+          <div class="label">Institution</div>
+          <div class="value">Victoria University, Kampala, Uganda<br>Institute of Advanced Technical Studies</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <div class="label">Location</div>
+          <div class="value">Wandegeya, Kampala, Uganda</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉</div>
+        <div>
+          <div class="label">Email</div>
+          <div class="value">campusstay@vu.ac.ug</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>
+          <div class="label">Phone</div>
+          <div class="value">+256 700 000 000</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🕐</div>
+        <div>
+          <div class="label">Office Hours</div>
+          <div class="value">Monday – Friday: 8:00 AM – 5:00 PM</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="form-card" style="box-shadow:none;padding:0;">
+      <div class="alert" id="contact-alert"></div>
+
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-name">Full Name</label>
+            <input type="text" id="c-name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email Address</label>
+            <input type="email" id="c-email" placeholder="you@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="c-subject">Subject</label>
+          <input type="text" id="c-subject" placeholder="What is this about?" required>
+        </div>
+        <div class="form-group">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" placeholder="Write your message here…" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message 📨</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-icon">🏨</div>
+        <span style="color:white;font-weight:800;">CampusStay Hub</span>
+      </div>
+      <p>A web-based platform helping Victoria University students find affordable hotels, motels and hostels in Kampala.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">All Listings</a></li>
+        <li><a href="post.html">Post a Listing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Types</h4>
+      <ul>
+        <li><a href="listings.html?type=hotel">Hotels</a></li>
+        <li><a href="listings.html?type=motel">Motels</a></li>
+        <li><a href="listings.html?type=hostel">Hostels</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CampusStay Hub — Victoria University, Kampala, Uganda</p>
+  </div>
+</footer>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

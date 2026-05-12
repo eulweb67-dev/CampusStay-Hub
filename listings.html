@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Listings — CampusStay Hub</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">
+    <div class="logo-icon">🏨</div>
+    <span>Campus<em>Stay</em> Hub</span>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="listings.html">Listings</a></li>
+    <li><a href="post.html">Post Listing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-auth">
+    <button class="login" onclick="location.href='login.html'">Login</button>
+    <button class="signup" onclick="location.href='signup.html'">Sign Up</button>
+  </div>
+</nav>
+
+<!-- ===== PAGE HEADER ===== -->
+<div class="page-header">
+  <h1>All Accommodations</h1>
+  <p>Hotels, Motels &amp; Hostels near Victoria University, Kampala</p>
+</div>
+
+<!-- ===== LISTINGS ===== -->
+<section class="listings-section">
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <input type="text" id="search-input" placeholder="🔍  Search by name or location…">
+    <select id="type-filter">
+      <option value="">All Types</option>
+      <option value="hotel">🏨 Hotels</option>
+      <option value="motel">🏩 Motels</option>
+      <option value="hostel">🏠 Hostels</option>
+    </select>
+    <select id="price-filter">
+      <option value="">Any Price</option>
+      <option value="60000">Under UGX 60,000</option>
+      <option value="100000">Under UGX 100,000</option>
+      <option value="200000">Under UGX 200,000</option>
+      <option value="350000">Under UGX 350,000</option>
+    </select>
+    <button id="clear-filters">Clear</button>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="cards" id="listings-cards">
+    <!-- Populated dynamically by script.js -->
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-icon">🏨</div>
+        <span style="color:white;font-weight:800;">CampusStay Hub</span>
+      </div>
+      <p>A web-based platform helping Victoria University students find affordable hotels, motels and hostels in Kampala.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">All Listings</a></li>
+        <li><a href="post.html">Post a Listing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Types</h4>
+      <ul>
+        <li><a href="listings.html?type=hotel">Hotels</a></li>
+        <li><a href="listings.html?type=motel">Motels</a></li>
+        <li><a href="listings.html?type=hostel">Hostels</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CampusStay Hub — Victoria University, Kampala, Uganda</p>
+  </div>
+</footer>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

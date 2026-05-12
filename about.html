@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — CampusStay Hub</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    .about-page { max-width: 900px; margin: 0 auto; padding: 60px 40px; }
+    .about-page h2 { font-size: 26px; font-weight: 800; margin-bottom: 12px; color: #1a1a2e; }
+    .about-page p { color: #555; line-height: 1.8; margin-bottom: 18px; }
+    .about-page .highlight-box {
+      background: #f0f4ff;
+      border-left: 4px solid #1e60d4;
+      padding: 20px 24px;
+      border-radius: 0 12px 12px 0;
+      margin: 28px 0;
+    }
+    .about-page .highlight-box p { margin: 0; color: #1a1a2e; font-weight: 500; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 32px 0; }
+    .about-card {
+      background: white;
+      border: 1px solid #e8efff;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 2px 12px rgba(30,96,212,0.07);
+    }
+    .about-card .icon { font-size: 30px; margin-bottom: 10px; }
+    .about-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .about-card p { color: #666; font-size: 14px; line-height: 1.6; margin: 0; }
+    .team-box {
+      background: linear-gradient(135deg, #1e60d4, #0a2463);
+      color: white;
+      border-radius: 16px;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    .team-box h3 { font-size: 20px; font-weight: 800; margin-bottom: 14px; }
+    .team-box p { color: rgba(255,255,255,0.85); font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+    .team-box .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    @media(max-width:600px){ .about-grid{ grid-template-columns:1fr; } .about-page{ padding:40px 20px; } }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">
+    <div class="logo-icon">🏨</div>
+    <span>Campus<em>Stay</em> Hub</span>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="listings.html">Listings</a></li>
+    <li><a href="post.html">Post Listing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-auth">
+    <button class="login" onclick="location.href='login.html'">Login</button>
+    <button class="signup" onclick="location.href='signup.html'">Sign Up</button>
+  </div>
+</nav>
+
+<!-- ===== PAGE HEADER ===== -->
+<div class="page-header">
+  <h1>About CampusStay Hub</h1>
+  <p>A student project by Victoria University — Professional Certificate in Software Engineering</p>
+</div>
+
+<!-- ===== CONTENT ===== -->
+<div class="about-page">
+
+  <h2>Background</h2>
+  <p>Victoria University, located in Kampala, Uganda, attracts a large and growing student population each academic year. As enrolment increases, the need for affordable and conveniently located accommodation becomes increasingly critical. Many students — particularly those relocating from outside Kampala — faced considerable difficulty identifying suitable hotels, motels, or hostels within close proximity to campus.</p>
+  <p>The process of finding accommodation was largely manual, relying on physical visits, informal social networks, and printed notices. No centralised digital platform existed to aggregate and present accommodation options in a structured, easily accessible manner.</p>
+
+  <div class="highlight-box">
+    <p>CampusStay Hub was conceived to address this gap — providing a single web-based platform where students can search and compare nearby accommodation across multiple types and price ranges, instantly and for free.</p>
+  </div>
+
+  <h2>What the Platform Does</h2>
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="icon">🔍</div>
+      <h4>Live Search</h4>
+      <p>Search across all listings by name or location as you type — results update instantly without reloading the page.</p>
+    </div>
+    <div class="about-card">
+      <div class="icon">🎛</div>
+      <h4>Smart Filters</h4>
+      <p>Filter by accommodation type (hotel, motel, hostel) and price range simultaneously, with real-time results.</p>
+    </div>
+    <div class="about-card">
+      <div class="icon">📞</div>
+      <h4>Direct Contact</h4>
+      <p>Each listing shows pricing, location, and direct contact details including phone and WhatsApp links.</p>
+    </div>
+    <div class="about-card">
+      <div class="icon">📱</div>
+      <h4>Mobile Friendly</h4>
+      <p>Fully responsive design that works on smartphones, tablets, and desktop browsers without any issues.</p>
+    </div>
+  </div>
+
+  <h2>Technologies Used</h2>
+  <p>CampusStay Hub was built using three core front-end web technologies:</p>
+  <p><strong>HTML5</strong> defines the structure of all pages including the accommodation cards, search bar, and filter controls. <strong>CSS3</strong> handles all visual styling including the blue and white colour scheme, responsive card layout, and animations. <strong>JavaScript</strong> powers all interactive functionality including live search, dynamic filtering, real-time card rendering, and DOM manipulation.</p>
+  <p>No server-side backend or database management system is used in this version. All accommodation data is structured as JavaScript objects on the client side, enabling fast interactions without server round-trips.</p>
+
+  <h2>Scope &amp; Limitations</h2>
+  <p>CampusStay Hub covers hotels, motels, and hostels within a reasonable distance from Victoria University's main campus in Kampala. In its current form, the platform is a static web application. Listings cannot be updated by providers without developer involvement, and the platform does not support online booking, payment processing, or real-time availability data.</p>
+
+  <h2>Future Development</h2>
+  <p>Planned future enhancements include migrating accommodation data to a backend database (MySQL or MongoDB), implementing a provider self-registration portal, adding a student review and rating system, integrating Google Maps for visual location guidance, and developing a companion mobile application. Machine learning-based accommodation recommendations are also envisioned as a long-term feature.</p>
+
+  <!-- Team box -->
+  <div class="team-box">
+    <h3>Project Information</h3>
+    <p><strong>Developer:</strong> Muhanguzi Eulgene</p>
+    <p><strong>Registration No:</strong> VU-CSF-2603-1125-DAY</p>
+    <p><strong>Supervisor:</strong> Lutalo Sebastian</p>
+    <p><strong>Institution:</strong> Victoria University — Institute of Advanced Technical Studies</p>
+    <p><strong>Programme:</strong> Professional Certificate in Software Engineering</p>
+    <p><strong>Submitted:</strong> April 2026</p>
+    <div style="margin-top:14px;">
+      <span class="badge">HTML5</span>
+      <span class="badge">CSS3</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Client-Side</span>
+      <span class="badge">Responsive</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-icon">🏨</div>
+        <span style="color:white;font-weight:800;">CampusStay Hub</span>
+      </div>
+      <p>A web-based platform helping Victoria University students find affordable hotels, motels and hostels in Kampala.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">All Listings</a></li>
+        <li><a href="post.html">Post a Listing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Types</h4>
+      <ul>
+        <li><a href="listings.html?type=hotel">Hotels</a></li>
+        <li><a href="listings.html?type=motel">Motels</a></li>
+        <li><a href="listings.html?type=hostel">Hostels</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CampusStay Hub — Victoria University, Kampala, Uganda &nbsp;|&nbsp; Developed by Muhanguzi Eulgene &nbsp;|&nbsp; Reg: VU-CSF-2603-1125-DAY</p>
+  </div>
+</footer>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

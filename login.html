@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — CampusStay Hub</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">
+    <div class="logo-icon">🏨</div>
+    <span>Campus<em>Stay</em> Hub</span>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="listings.html">Listings</a></li>
+    <li><a href="post.html">Post Listing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-auth">
+    <button class="login" onclick="location.href='login.html'">Login</button>
+    <button class="signup" onclick="location.href='signup.html'">Sign Up</button>
+  </div>
+</nav>
+
+<!-- ===== FORM ===== -->
+<div class="form-page">
+  <div class="form-card">
+    <div class="form-icon">🔐</div>
+    <h2>Welcome Back</h2>
+    <p class="sub">Log in to your CampusStay Hub account</p>
+
+    <div class="alert" id="login-alert"></div>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="btn-primary">Login →</button>
+    </form>
+
+    <div class="form-divider">or</div>
+    <p class="switch-link">Don't have an account? <a href="signup.html">Sign Up Free</a></p>
+    <p class="switch-link" style="margin-top:8px;"><a href="index.html">← Back to Home</a></p>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-bottom" style="padding-top:0;border-top:none;">
+    <p>© 2026 CampusStay Hub — Victoria University, Kampala, Uganda</p>
+  </div>
+</footer>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

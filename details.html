@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accommodation Details — CampusStay Hub</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">
+    <div class="logo-icon">🏨</div>
+    <span>Campus<em>Stay</em> Hub</span>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="listings.html">Listings</a></li>
+    <li><a href="post.html">Post Listing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-auth">
+    <button class="login" onclick="location.href='login.html'">Login</button>
+    <button class="signup" onclick="location.href='signup.html'">Sign Up</button>
+  </div>
+</nav>
+
+<!-- ===== DETAILS ROOT ===== -->
+<div class="details-container" id="details-root">
+  <div class="spinner"></div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-icon">🏨</div>
+        <span style="color:white;font-weight:800;">CampusStay Hub</span>
+      </div>
+      <p>A web-based platform helping Victoria University students find affordable hotels, motels and hostels in Kampala.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">All Listings</a></li>
+        <li><a href="post.html">Post a Listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Types</h4>
+      <ul>
+        <li><a href="listings.html?type=hotel">Hotels</a></li>
+        <li><a href="listings.html?type=motel">Motels</a></li>
+        <li><a href="listings.html?type=hostel">Hostels</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CampusStay Hub — Victoria University, Kampala, Uganda</p>
+  </div>
+</footer>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

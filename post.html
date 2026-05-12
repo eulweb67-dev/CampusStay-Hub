@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Listing — CampusStay Hub</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">
+    <div class="logo-icon">🏨</div>
+    <span>Campus<em>Stay</em> Hub</span>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="listings.html">Listings</a></li>
+    <li><a href="post.html">Post Listing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-auth">
+    <button class="login" onclick="location.href='login.html'">Login</button>
+    <button class="signup" onclick="location.href='signup.html'">Sign Up</button>
+  </div>
+</nav>
+
+<!-- ===== PAGE HEADER ===== -->
+<div class="page-header">
+  <h1>Post Your Listing</h1>
+  <p>List your hotel, motel or hostel on CampusStay Hub — reach thousands of Victoria University students</p>
+</div>
+
+<!-- ===== FORM ===== -->
+<div class="form-page" style="background:#fff;">
+  <div class="form-card" style="max-width:600px;">
+    <div class="form-icon">📋</div>
+    <h2>Listing Details</h2>
+    <p class="sub">All submissions are reviewed before going live. We will contact you within 24 hours.</p>
+
+    <div class="alert" id="post-alert"></div>
+
+    <form id="post-form">
+      <div class="form-group">
+        <label for="p-name">Accommodation Name *</label>
+        <input type="text" id="p-name" placeholder="e.g. Victoria Grand Hotel" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="p-type">Accommodation Type *</label>
+          <select id="p-type" required>
+            <option value="">Select type…</option>
+            <option value="hotel">Hotel</option>
+            <option value="motel">Motel</option>
+            <option value="hostel">Hostel</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="p-price">Price (UGX) *</label>
+          <input type="text" id="p-price" placeholder="e.g. 120,000/night" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="p-location">Location / Address *</label>
+        <input type="text" id="p-location" placeholder="e.g. Wandegeya, Kampala" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="p-contact">Phone / WhatsApp *</label>
+          <input type="tel" id="p-contact" placeholder="+256 700 000 000" required>
+        </div>
+        <div class="form-group">
+          <label for="p-email">Email Address *</label>
+          <input type="email" id="p-email" placeholder="your@email.com" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="p-description">Description</label>
+        <textarea id="p-description" placeholder="Describe your accommodation — facilities, room types, proximity to VU, any special features…"></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Submit Listing →</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== WHY LIST ===== -->
+<section class="about-strip" style="background:#f0f4ff;">
+  <div class="text">
+    <h2>Why List on CampusStay Hub?</h2>
+    <p>CampusStay Hub is the only platform dedicated to connecting Victoria University students with nearby accommodation. Your listing reaches students actively searching for hotels, motels and hostels in the surrounding areas.</p>
+    <p>Listing is completely free. Once your submission is approved, students can find your contact details, location and pricing instantly through our live search and filter system.</p>
+    <div class="stats">
+      <div class="stat-box"><div class="num">Free</div><div class="label">to List</div></div>
+      <div class="stat-box"><div class="num">Fast</div><div class="label">24hr Review</div></div>
+      <div class="stat-box"><div class="num">Direct</div><div class="label">Student Contact</div></div>
+    </div>
+  </div>
+  <div class="visual">📋</div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-icon">🏨</div>
+        <span style="color:white;font-weight:800;">CampusStay Hub</span>
+      </div>
+      <p>A web-based platform helping Victoria University students find affordable hotels, motels and hostels in Kampala.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">All Listings</a></li>
+        <li><a href="post.html">Post a Listing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Types</h4>
+      <ul>
+        <li><a href="listings.html?type=hotel">Hotels</a></li>
+        <li><a href="listings.html?type=motel">Motels</a></li>
+        <li><a href="listings.html?type=hostel">Hostels</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CampusStay Hub — Victoria University, Kampala, Uganda</p>
+  </div>
+</footer>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
